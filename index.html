@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/index.css">
+</head>
+<body onload="loadDate()">
+
+<div class="navbar" id="navbar">
+  <a href="#" onclick="gotohome()">Home</a>
+  <a href="#" onclick="gotoabout()">About</a>
+  <a href="#" onclick="gotocontact()">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="home" id="home" >
+  <div class="lefthome">
+    <img class="image" alt="display" src="https://drive.google.com/uc?export=view&id=1bsUo4LeL18t2vSi4OCByL5i_x46e8mhg">
+  </div>
+  <div class="righthome">
+    <center>
+      <div class="content">
+    <h1> Arun Kumar Padakanti</h1> <p>M.Tech, Computer Science </p><p> IIIT Hyderabad</p>
+    <div class="cvbutton" id="cvbutton">
+      <button class="button"><a href="https://drive.google.com/uc?export=view&id=1Qoh9R36-aHu6SkTUFnYPlviwniE6wFf7" target="_blank"> Download CV </a></button>
+    </div>
+    </div>
+  </center>
+  </div>
+</div>
+<div class="aboutme" id="aboutme">
+  <div class="edu">
+    <div class="subedu">
+    <h2 class="heading1">Education:</h2>
+    <ul class="aboutlist">
+      <li> Currently pursuing Masters in Computer Science at <a href="https://www.iiit.ac.in/" target="_blank"> IIIT Hyderabad. </a> (2021-2023) </li>
+      <li> Pursued my Bachelor's in <a href="https://www.sreenidhi.edu.in/" target="_blank">SNIST</a> with 8.83 CGPA.(2015-2019) </li>
+      <li> High School: Narayana Jr College. </li>
+    </ul>
+  </div>
+  </div>
+  <div class="work">
+    <div class="subedu">
+    <h2 class="heading1">Work Experience:</h2>
+    <ul class="aboutlist">
+      <li> Infosys Ltd (Aug-2019 to Aug-2021) </li>
+      <li> Intern at Infosys Ltd. (Feb-2019 to May-2019) </li>
+      <li> Intern at Triant Software Solutions. </li>
+    </ul>
+  </div>
+  </div>
+  <div class="interests">
+    <div class="subedu">
+    <h2 class="heading1">Hobbies and Interests:</h2>
+    <ul class="aboutlist">
+      <li> PC Gamer(addicted to Counter Strike: Global Offensive) </li>
+      <li> Watch a lot of cricket and football. </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+<div class="contact" id="contact">
+  <div class="container">
+    <form >
+      <table class="formtable">
+        <tr rowspan="2">
+
+      <td colspan="2"><label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.."></td>
+       </tr>
+       <tr>
+      <td><label for="lname">Email</label></td>
+    </tr>
+    <tr>
+      <td><input type="text" id="lname" name="email" placeholder="Your email.."></td>
+    </tr>
+    <tr>
+      <td><label for="subject">Message</label></td></tr>
+      <tr><td><textarea  id="subject" name="subject" placeholder="Write something.."></textarea></td></tr>
+  
+      <tr><td>
+        <!-- <input type="submit" class="button" value="Submit"> -->
+        <div class="cvbutton" >
+          <button class="button"> Submit </button>
+        </div>
+      </td></tr>
+      </table>
+    </form>
+  </div>
+  
+</div>
+<footer>
+  <div class="datetime">
+    <div class="date">
+      <span id="dayname">Day</span>,
+      <span id="month">Month</span>
+      <span id="daynum">00</span>,
+      <span id="year">Year</span>
+    </div>
+    <div class="time">
+      <span id="hours">00</span>:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>
+    </div>
+  </div>
+</footer>
+<script src="scripts/index.js"></script>
+
+</body>
+</html>
